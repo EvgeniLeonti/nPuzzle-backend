@@ -1,0 +1,24 @@
+{
+  "name": "n-puzzle-backend",
+  "version": "1.0.0",
+  "description": "N-Puzzle backend",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon",
+    "inspect": "nodemon --inspect src/app.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "winston": "^3.3.3",
+    "cors": "^2.8.5",
+    "express-validator": "^6.6.1",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "@types/node": "^14.14.2"
+  }
+}
