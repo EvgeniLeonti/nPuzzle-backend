@@ -1,6 +1,6 @@
 /*
     this is a pseudo db wrapper:
-    can be used in the future to write/read mysql db (with serialization of board to string) or noSQL (without any serialization)
+    can be used in the future to write/read mysql db (with serialization of board to string, for example) or noSQL (without any serialization)
  */
 
 import { v4 as uuid } from 'uuid';

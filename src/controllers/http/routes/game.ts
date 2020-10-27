@@ -1,6 +1,6 @@
 import {Router} from 'express';
 import GameService from '../../../services/game';
-import GameInputValidator from '../../../validators/game';
+import GameInputValidator from '../../../validators/gameInput';
 
 const route = Router();
 

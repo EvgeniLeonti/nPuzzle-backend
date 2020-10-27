@@ -4,18 +4,18 @@ import cors from 'cors';
 import routes from '../controllers/http';
 import config from '../config';
 
+/**
+ * sets middlewares, health endpoint, and routes for express app
+ *
+ * @param app
+ */
 export default ({ app }: { app: express.Application }) => {
   app.get('/status', (req, res) => {
     return res.json({status: 'OK'} as JSONOptions).status(200);
   });
 
-  // cors
   app.use(cors());
-
-  // middleware that transforms the raw string of req.body into json
   app.use(bodyParser.json());
-
-  // load API routes
   app.use(config.API.prefix, routes());
 
   // catch 404 and forward to error handler
