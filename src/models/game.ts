@@ -3,7 +3,7 @@
     can be used in the future to write/read mysql db (with serialization of board to string, for example) or noSQL (without any serialization)
  */
 
-import { v4 as uuid } from 'uuid';
+import {v4 as uuid} from 'uuid';
 import {IBoard, IGame} from "../interfaces/IGame";
 
 const games = {};

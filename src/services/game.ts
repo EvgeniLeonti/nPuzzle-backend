@@ -1,8 +1,8 @@
-import {IGameActionResult, IBoard, IGame} from '../interfaces/IGame';
+import {IBoard, IGame, IGameActionResult} from '../interfaces/IGame';
 import GameModel from '../models/game';
 import Logger from "../loaders/logger";
 import {ICoordinates} from "../interfaces/ICoordinates";
-import { createNewBoard, isBoardSolved, swapBoardTiles } from "../utils/gameBoard";
+import {createNewBoard, isBoardSolved, swapBoardTiles} from "../utils/gameBoard";
 import {isValidCoordinates, isValidMoveDirection} from "../validators/gameMove";
 
 const ERROR_MESSAGE = {

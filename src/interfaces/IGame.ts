@@ -1,5 +1,5 @@
 export interface IBoard {
-    [index:number]: (number|null)[]
+    [index: number]: (number | null)[]
 }
 
 export interface IGame {
@@ -14,5 +14,5 @@ export interface IGameActionResult {
     game?: IGame
 }
 
-export enum Direction { UP = 1,DOWN ,LEFT , RIGHT}
+export enum Direction { UP = 1, DOWN, LEFT, RIGHT}
 

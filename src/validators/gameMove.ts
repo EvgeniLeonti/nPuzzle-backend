@@ -26,7 +26,7 @@ const _isValidSourceNDestinationValues = (source: ICoordinates, destination: ICo
  * make sure that:
  * 1. source and destination are within board limits
  * 2. only one of source or destination should be undefined (mutually exclusive)
- * 
+ *
  * @param source
  * @param destination
  * @param board
@@ -43,4 +43,4 @@ const isValidCoordinates = (source: ICoordinates, destination: ICoordinates, boa
 const isValidMoveDirection = (source: ICoordinates, destination: ICoordinates): boolean =>
     !!getMoveDirection(source, destination);
 
-export { isValidCoordinates, isValidMoveDirection };
+export {isValidCoordinates, isValidMoveDirection};

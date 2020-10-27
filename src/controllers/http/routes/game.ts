@@ -1,4 +1,4 @@
-import {Router, JSONOptions} from 'express';
+import {JSONOptions, Router} from 'express';
 import GameService from '../../../services/game';
 import GameInputValidator from '../../../validators/gameInput';
 

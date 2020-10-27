@@ -27,7 +27,7 @@ const _boardToFlat = (board: IBoard) => (board as number[][]).reduce((prev, curr
 const _isFlatBoardSorted = (array) => {
     let sorted = true;
     for (let i = 0; i < array.length - 1; i++) {
-        if (array[i] > array[i+1]) {
+        if (array[i] > array[i + 1]) {
             sorted = false;
             break;
         }
@@ -106,4 +106,4 @@ const isBoardSolved = (board: IBoard): boolean => {
 
 }
 
-export { createNewBoard, isBoardSolved, swapBoardTiles, getMoveDirection }
+export {createNewBoard, isBoardSolved, swapBoardTiles, getMoveDirection}

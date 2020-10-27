@@ -6,7 +6,7 @@ import Logger from './loaders/logger';
 (async () => {
     const app = express();
 
-    await loaders({ expressApp: app });
+    await loaders({expressApp: app});
 
     app.listen(config.PORT, () => {
         Logger.info(`server listening on port: ${config.PORT}`);
