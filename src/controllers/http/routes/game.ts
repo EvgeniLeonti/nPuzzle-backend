@@ -1,4 +1,4 @@
-import {Router} from 'express';
+import {Router, JSONOptions} from 'express';
 import GameService from '../../../services/game';
 import GameInputValidator from '../../../validators/gameInput';
 
@@ -27,7 +27,7 @@ export default (app: Router) => {
             return next({status: 400, message: newGame.errorMessage});
         }
 
-        return res.json(newGame.game).status(201);
+        return res.json(newGame.game as JSONOptions).status(201);
     });
 
     route.post('/play', (req, res, next) => validateInput(req, next), async (req, res, next) => {
@@ -38,6 +38,6 @@ export default (app: Router) => {
             return next({status: 400, message: updatedGame.errorMessage});
         }
 
-        return res.json(updatedGame.game).status(200);
+        return res.json(updatedGame.game as JSONOptions).status(200);
     });
 };
