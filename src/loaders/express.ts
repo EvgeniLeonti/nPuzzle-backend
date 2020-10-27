@@ -6,10 +6,7 @@ import config from '../config';
 
 export default ({ app }: { app: express.Application }) => {
   app.get('/status', (req, res) => {
-    res.status(200).end();
-  });
-  app.head('/status', (req, res) => {
-    res.status(200).end();
+    return res.json({status: 'OK'} as JSONOptions).status(200);
   });
 
   // cors
@@ -19,7 +16,7 @@ export default ({ app }: { app: express.Application }) => {
   app.use(bodyParser.json());
 
   // load API routes
-  app.use(config.api.prefix, routes());
+  app.use(config.API.prefix, routes());
 
   // catch 404 and forward to error handler
   app.use((req, res, next) => {
